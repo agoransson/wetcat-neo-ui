@@ -1,0 +1,26 @@
+<form name="registerForm">
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Firstname</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Firstname" ng-model="credentials.firstname" ng-required>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Lastname</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Lastname" ng-model="credentials.lastname" ng-required>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" ng-model="credentials.email">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="credentials.password">
+  </div>
+  
+
+</form>
+
+  <button type="submit" class="btn btn-default" ng-click="create(credentials)">Submit</button>
